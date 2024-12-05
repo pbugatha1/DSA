@@ -1,12 +1,8 @@
-
-
-
 array = [1, 2, 3, 4, 5]
 
 ######  Constant time complexity  #######
 print('######  Constant time complexity  #######')
 print(array[0])
-
 
 ######  Linear time complexity  #######
 print('######  Linear time complexity  #######')
@@ -86,44 +82,4 @@ print(f(3))
 
 
 
-
-######  Quiz Questions ####### 
-
-
-def f1(n):
-    if n <= 0:
-        return 1
-    else:
-        return 1 + f1(n-1)
-
-
-def f2(n):
-    
-    if n <= 0:
-        return 1
-    else:
-        return 1 + f2(n-5)
-
-
-def f3(n):
-    if n <= 0:
-        return 1
-    else:
-        return 1 + f3(n/5)
-
-
-def f4(n,m,o):
-    if n<=0:
-        print(n,m,o)
-    else:
-        f4(n-1,m+1,o)
-        f4(n-1,m,o+1)
-
-def f5(n):
-    for i in range(0,n,2):
-        print(i)  
-    if n<=0:
-        return 1
-    else:
-        return 1 + f5(n-5)
 
